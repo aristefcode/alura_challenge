@@ -1,17 +1,31 @@
-# Entorno virtual
-.venv/
-
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# VS Code
-.vscode/
-
 # Variables de entorno
 .env
+.env.local
 
-# Archivos de sistema
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cache y bytecode de Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+
+# Por si ChromaDB llega a escribir algo en disco localmente
+chroma/
+.chroma/
+*.sqlite3
+
+# Editores / IDEs
+.vscode/
+.idea/
+
+# Sistema operativo
 .DS_Store
 Thumbs.db
+desktop.ini
